@@ -1,0 +1,113 @@
+{
+    "cards": [
+      {
+        "id": "1",
+        "image": "/assets/images/Image.png",
+        "category": "Management",
+        "title": "Bill Walsh leadership lessons",
+        "description": "Unlock the principles that turned a struggling team into a dynasty. Practical leadership takeaways.",
+        "avatar": {
+          "image": "/assets/images/Avatar (2).png",
+          "name": "Alec Whitten",
+          "date": "17 Jan 2022"
+        }
+      },
+      {
+        "id": "2",
+        "image": "/assets/images/Image (1).png",
+        "category": "Design",
+        "title": "How to build aesthetic UI systems",
+        "description": "Guidelines for creating clean and scalable design systems used by modern teams.",
+        "avatar": {
+          "image": "/assets/images/Avatar (4).png",
+          "name": "Sara Dimitri",
+          "date": "04 Feb 2022"
+        }
+      },
+      {
+        "id": "3",
+        "image": "/assets/images/Image (2).png",
+        "category": "Software",
+        "title": "Modern API design principles",
+        "description": "Learn how to structure APIs that are intuitive, robust, and easy to maintain.",
+        "avatar": {
+          "image": "/assets/images/Avatar (5).png",
+          "name": "John Carter",
+          "date": "12 Mar 2022"
+        }
+      },
+      {
+        "id": "4",
+        "image": "/assets/images/Image (3).png",
+        "category": "Engineering",
+        "title": "Scaling systems the right way",
+        "description": "Patterns for high-load architectures, from caching to distributed queues.",
+        "avatar": {
+          "image": "/assets/images/Avatar (6).png",
+          "name": "Michael Rodrigues",
+          "date": "27 Apr 2022"
+        }
+      },
+      {
+        "id": "5",
+        "image": "/assets/images/Image (4).png",
+        "category": "Software",
+        "title": "Refactoring without fear",
+        "description": "Approaches for safe, incremental refactoring in large codebases.",
+        "avatar": {
+          "image": "/assets/images/Avatar (7).png",
+          "name": "Emily Stone",
+          "date": "09 May 2022"
+        }
+      },
+      {
+        "id": "6",
+        "image": "/assets/images/Image (5).png",
+        "category": "Design",
+        "title": "Color theory in digital products",
+        "description": "How to choose colors that enhance usability and visual clarity.",
+        "avatar": {
+          "image": "/assets/images/Avatar (8).png",
+          "name": "Liam Anderson",
+          "date": "19 Jun 2022"
+        }
+      },
+      {
+        "id": "7",
+        "image": "/assets/images/Image (6).png",
+        "category": "Engineering",
+        "title": "Building resilient microservices",
+        "description": "Techniques for fault-tolerance, retries, circuit breakers, and graceful degradation.",
+        "avatar": {
+          "image": "/assets/images/Avatar (9).png",
+          "name": "Sophie Turner",
+          "date": "03 Jul 2022"
+        }
+      },
+      {
+        "id": "8",
+        "image": "/assets/images/Image (7).png",
+        "category": "Management",
+        "title": "High-performance team culture",
+        "description": "What drives teams to stay motivated, aligned, and consistently deliver results.",
+        "avatar": {
+          "image": "/assets/images/Avatar (10).png",
+          "name": "Marcus Green",
+          "date": "21 Aug 2022"
+        }
+      },
+      {
+        "id": "9",
+        "image": "/assets/images/Image (9).png",
+        "category": "Design",
+        "title": "Designing for accessibility",
+        "description": "Principles that help make your product inclusive and easy for everyone to use.",
+        "avatar": {
+          "image": "/assets/images/Avatar (11).png",
+          "name": "Hana Suzuki",
+          "date": "11 Sep 2022"
+        }
+      }
+    ]
+  }
+  

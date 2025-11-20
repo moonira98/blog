@@ -1,13 +1,19 @@
 <div class="card">
-    <img src="/assets/images/Image.png"/>
-    <span>design</span>
-    <h2>UX review presentations</h2>
-    <p>How do you create compelling presentations that wow your colleagues and impress your managers?</p>
+    <img [src]="card().image"/>
+    <span>{{card().category}}</span>
+    <div class="card__title">
+        <h2>{{card().title}}</h2>
+        <img src="/assets/images/arrow-up-right.png">
+    </div>
+    <p>{{card().description}}</p>
     <div class="card__avatar">
-        <img src="/assets/images/Avatar (1).png">
-        <div>
-            <p>Olivia Rhye</p>
-            <span>20 Jan 2022</span>
+        <div class="card__avatar__image">
+            <img [src]="card().avatar?.image">
+        </div>
+        
+        <div class="card__avatar__info">
+            <p>{{card().avatar?.name}}</p>
+            <span>{{card().avatar?.date}}</span>
         </div>
     </div>
 </div>

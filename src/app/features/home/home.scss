@@ -1,6 +1,8 @@
 .home {
-    padding-top: 5rem;
+    padding-top: 3rem;
     background-color: #F9F5FF;
+    padding-bottom: 50px;
+  
 
     &__intro {
         display: flex;
@@ -8,13 +10,14 @@
         align-items: center;
 
         button {
-            padding: 0.3rem 0.6rem;
+            padding: 0.2rem 1rem;
             border: none;
             border-radius: 1rem;
             color: #6941C6;
             line-height: 20px;
             font-weight: 500;
             margin-bottom: 1rem;
+            font-size: 14px;
         }
 
         h1 {
@@ -23,6 +26,7 @@
             font-size: 48px;
             font-weight: 600;
             margin-bottom: 24px;
+            letter-spacing: -2%;
         }
 
         p {
@@ -33,18 +37,97 @@
 
         }
 
+   
+
         input {
             width: 250px;
             height: 30px ;
-            border-radius: 8px;
+            border-radius: 5px;
             border: 1px solid rgb(177, 176, 176);
         }
+
+        
     }
 
     &__cards {
-        margin: 5rem;
+        margin-top: 5rem;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
         padding: 0 3rem;
     }
+
+    &__footer {
+        display: flex;
+        margin-top: 5rem;
+
+        button {
+            background-color: white;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            border: none;
+            border-radius: 8px;
+            color: #6941C6;
+
+            img {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.button-title {
+    display: none;
+}
+
+
+@media(max-width: 768px){
+    .button-title {
+        display: block;
+    }
+
+    .main-title {
+        display: none;
+    }
+
+    .home {
+        margin: 0;
+
+        &__intro {
+            text-align: center;
+            padding: 0 25px;
+
+            h1 {
+                font-size: 36px;
+                line-height: 44px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            input {
+                width: 85%;
+            }
+        }
+
+        &__cards {
+            display: block;
+            padding: 0;
+        }
+
+        &__footer {
+            margin-top: 3rem;
+          
+        
+    
+            button {
+                width: 80%;
+                padding-right: 7rem;
+            }
+        }
+    }
+
 }

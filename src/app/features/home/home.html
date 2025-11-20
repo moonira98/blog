@@ -1,18 +1,24 @@
 <div class="home">
-    <div class="home__intro">
-        <button>Our blog</button>
-        <h1>Resources and insights</h1>
-        <p>The latest industry news, interviews, technologies, and resources.</p>
-        <input type="text" placeholder="Search">
-    </div>
-    
-    <div class="home__cards">
-        <app-card></app-card>
-        <app-card></app-card>
-        <app-card></app-card>
-    </div>
-    
-    <div class="home__footer">
-        <button>Load more</button>
-    </div>
+  <div class="home__intro">
+    <button>
+      <span class="main-title">Our blog</span>
+      <span class="button-title">Pricing Plans</span>
+    </button>
+    <h1>Resources and insights</h1>
+    <p>The latest industry news, interviews, technologies, and resources.</p>
+    <input type="text" placeholder="Search" />
+  </div>
+
+  <div class="home__cards">
+    @for(card of cards(); track card.id) {
+    <app-card [card]="card" [routerLink]="['/details', card.id]"></app-card>
+    }
+  </div>
+
+  <div class="home__footer">
+    <button>
+      <img src="/assets/images/Icon.png" />
+      Load more
+    </button>
+  </div>
 </div>
