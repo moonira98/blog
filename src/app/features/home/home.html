@@ -6,7 +6,12 @@
     </button>
     <h1>Resources and insights</h1>
     <p>The latest industry news, interviews, technologies, and resources.</p>
-    <input type="text" placeholder="Search" />
+    <div class="home__intro__inputBox">
+      <img src="assets/images/search (3).png">
+      <input type="text" placeholder="Search" [(ngModel)]="searchWord" />
+      <button (click)="search()" >Search</button>
+    </div>
+    
   </div>
 
   <div class="home__cards">

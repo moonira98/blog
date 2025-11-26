@@ -1,23 +1,28 @@
 :host {
-    width: 30%;
+    width: 31%;
 }
 
 .card {
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: -webkit-fill-available;
+    border: none;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.2);
     background-color: white;
-    padding: 1rem;
-    display: block;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     
 
     img {
         width: 100%;
-        margin-bottom: 32px ;
+        margin-bottom: 32px;
     }
 
-    span { 
+    &__category { 
+        margin-right: 500px;
         font-size: 14px;
         color:#6941C6 ;
-        font-weight: 600;
+        font-weight: 700;
     }
 
     &__title {
@@ -34,17 +39,18 @@
 
     h2 {
         color: #101828;
-        font-size: 22px;
-        font-weight: 600;
+        font-size: 24px;
+        font-weight: 6h00;
         line-height: 32px;
         margin-left: 0;
     }
 
-    p {
+    &__description {
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
         color: #667085;
+        margin-left: 0;
     }
 
     &__avatar {
@@ -69,13 +75,14 @@
             margin-left: 10px;
 
             p {
-                color: #101828;
-                margin-bottom: 5px;
+                color: var(--color-text);
+                margin-bottom: 10px;
+                font-weight: 500;
             }
 
             span {
                 color: #667085;
-                font-weight: 0;
+                font-weight: 400;
             }
         }
     }

@@ -1,4 +1,4 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, OnInit, inject, signal } from '@angular/core';
 import { Card } from "../../layout/card/card";
 import { ICard } from '../../model/card';
 import { model } from '@angular/core';
@@ -15,7 +15,8 @@ import { RouterLink } from "@angular/router";
 export class Home implements OnInit {
     cards = model<ICard[]>([])
     cardsService = inject(Cards)
-  
+    newArray: ICard[] = []
+    searchWord: string = ''
 
     ngOnInit(): void {
       this.getCards()
@@ -26,6 +27,15 @@ export class Home implements OnInit {
         this.cards.set(res)
         console.log(this.cards())
       })
+    }
+
+    search() {
+      const word = this.searchWord.trim().toLowerCase();
+      console.log(this.searchWord)
+      this.newArray = this.cards().filter((el) => 
+        el.title.toLowerCase().includes(word)
+      )
+      this.cards.set(this.newArray)
     }
 
 }

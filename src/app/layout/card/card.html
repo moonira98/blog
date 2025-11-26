@@ -1,11 +1,11 @@
 <div class="card">
     <img [src]="card().image"/>
-    <span>{{card().category}}</span>
+    <span class="card__category">{{card().category}}</span>
     <div class="card__title">
         <h2>{{card().title}}</h2>
         <img src="/assets/images/arrow-up-right.png">
     </div>
-    <p>{{card().description}}</p>
+    <p class="card__description">{{card().description}}</p>
     <div class="card__avatar">
         <div class="card__avatar__image">
             <img [src]="card().avatar?.image">

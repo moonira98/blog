@@ -1,19 +1,22 @@
 .home {
-    padding-top: 3rem;
-    background-color: #F9F5FF;
+    padding: 2rem 3rem 50px 3rem;
+    background-image: url('/assets/images/Background.png');
+    background-repeat: no-repeat;
+    background-size: 100% 900px ;
     padding-bottom: 50px;
-  
 
-    &__intro {
+     &__intro {
         display: flex;
         flex-direction: column;
         align-items: center;
+      
 
         button {
             padding: 0.2rem 1rem;
             border: none;
             border-radius: 1rem;
-            color: #6941C6;
+            color: var(--primary);
+            background-color: var(--color-bg-light);
             line-height: 20px;
             font-weight: 500;
             margin-bottom: 1rem;
@@ -36,17 +39,33 @@
             margin-bottom: 40px ;
 
         }
-
-   
-
-        input {
-            width: 250px;
-            height: 30px ;
-            border-radius: 5px;
-            border: 1px solid rgb(177, 176, 176);
-        }
-
+       
+        &__inputBox {
+            position: relative;
+            display: flex;
+            align-items: center;
         
+
+            img {
+                position: absolute;
+                margin-left: 5px;
+            }
+
+            input {
+                width: 250px;
+                height: 35px ;
+                border-radius: 5px;
+                padding-left: 35px;
+                border: 0.8px solid var(--color-text-secondary);
+            }
+
+            button {
+                background-color: var(--primary);
+                color: white;
+                margin: 15px 10px;
+                height: 35px;
+            }
+        }
     }
 
     &__cards {
@@ -56,6 +75,7 @@
         flex-wrap: wrap;
         gap: 20px;
         padding: 0 3rem;
+     
     }
 
     &__footer {
@@ -63,7 +83,7 @@
         margin-top: 5rem;
 
         button {
-            background-color: white;
+            background-color: var(--color-bg-light);
             padding: 1rem;
             display: flex;
             align-items: center;

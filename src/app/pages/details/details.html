@@ -1,15 +1,15 @@
 <div class="details">
     <div class="details__person">
         <div class="details__person-image">
-            <img>
+            <img [src]="card().image">
         </div>
         <div class="details__person-info">
-            <p></p>
-            <button></button>
+            <p>{{card().avatar?.name}}</p>
+            <button>Write a letter</button>
         </div>
     </div>
     <div class="details__category">
-        <p>{{cardId}} </p>
+        <p>{{cardId}}</p>
         <img>
     </div>
 </div>
