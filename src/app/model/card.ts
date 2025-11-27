@@ -13,6 +13,13 @@ export interface Avatar {
     avatar: Avatar;
   }
 
+
+  export interface adminSignUp {
+    username: string;
+    email: string;
+    password: number
+  }
+
   
   
   

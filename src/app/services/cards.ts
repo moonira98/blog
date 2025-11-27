@@ -2,7 +2,7 @@ import { Injectable, inject } from '@angular/core';
 import { environment } from '../../environments/environment.development';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { ICard } from '../model/card';
+import { adminSignUp, ICard } from '../model/card';
 
 
 
@@ -20,5 +20,9 @@ export class Cards {
 
   getCardById(id: any): Observable<ICard> {
     return this.http.get<ICard>(`${this.apiUrl}cards/${id}`)
+  }
+
+  createUser(data: adminSignUp) {
+    return this.http.post<adminSignUp>(`${this.apiUrl}adminsignup`, data)
   }
 }
