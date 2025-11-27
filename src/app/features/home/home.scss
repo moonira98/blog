@@ -5,12 +5,24 @@
     background-size: 100% 900px ;
     padding-bottom: 50px;
 
+    &__auth {
+        padding-left: 3rem;
+
+        button {
+            padding: 0.5rem 2rem;
+            margin-right: 10px;
+            border: none;
+            border-radius: 10px;
+            color: var(--primary);
+        }
+     }
+
      &__intro {
         display: flex;
         flex-direction: column;
         align-items: center;
-      
-
+        justify-content: center;
+        
         button {
             padding: 0.2rem 1rem;
             border: none;
@@ -66,6 +78,7 @@
                 height: 35px;
             }
         }
+       
     }
 
     &__cards {
@@ -115,6 +128,10 @@
     .home {
         margin: 0;
 
+        &__auth {
+            margin-bottom: 2rem;
+        }
+
         &__intro {
             text-align: center;
             padding: 0 25px;
@@ -128,8 +145,24 @@
                 font-size: 18px;
             }
 
+            &__inputBox {
+                display: block;
+                position: relative;
+                align-items: center;
+            
+    
+                img {
+                    position: absolute;
+                    margin-top: 5px;
+                }
+
+                button {
+                    padding: 1rem 4rem 2rem;
+                }
+            }
+
             input {
-                width: 85%;
+                width: 60%;
             }
         }
 

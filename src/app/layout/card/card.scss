@@ -91,8 +91,18 @@
 
 @media(max-width: 768px){
    .card {
-    width: 80%;
+    width: 100%;
     margin-bottom: 20px;
+
+    &__avatar {
+        margin-right: 0;
+
+        &__info {
+          font-size: 12px;
+        }
+    }
    }
+
+
     
 }
