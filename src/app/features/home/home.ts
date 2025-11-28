@@ -5,10 +5,11 @@ import { model } from '@angular/core';
 import { Cards } from '../../services/cards';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from "@angular/router";
+import { Header } from "../header/header";
 
 @Component({
   selector: 'app-home',
-  imports: [FormsModule, Card, RouterLink],
+  imports: [FormsModule, Card, RouterLink, Header],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })

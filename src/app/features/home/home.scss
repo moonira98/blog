@@ -6,15 +6,7 @@
     padding-bottom: 50px;
 
     &__auth {
-        padding-left: 3rem;
-
-        button {
-            padding: 0.5rem 2rem;
-            margin-right: 10px;
-            border: none;
-            border-radius: 10px;
-            color: var(--primary);
-        }
+        display: flex; 
      }
 
      &__intro {

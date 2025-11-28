@@ -5,9 +5,38 @@
 }
 
 form {
-    padding: 7rem;
-    background-color: red;
+    padding: 5rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-bg-light);
+    border-radius: 5px;
+
+    h2 {
+        color: grey;
+        margin-bottom: 20px;
+    }
+
+    input {
+        width: 300px;
+        height: 30px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        border: 1px solid grey;
+    }
+
+    button {
+        width: 100px;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        color: var(--primary);
+    }
+}
+
+.buttons {
+    width: 80%;
+    display: flex;
     justify-content: space-between;
 }

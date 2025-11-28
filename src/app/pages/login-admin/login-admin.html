@@ -1,7 +1,22 @@
-<form [formGroup]="signupForm" >
-    <input formControlName="username" type="text" placeholder="USERNAME" >
-    <input formControlName="email"  type="text" placeholder="EMAIL" >
-    <input formControlName="password" type="number" placeholder="PASSWORD">
-    <button (click)="signup()">SignUp</button>
-</form>
-
+@if(isModal()) {
+    <form [formGroup]="signupForm" >
+        <h2>SignUp</h2>
+        <input formControlName="username" type="text" placeholder="USERNAME" >
+        <input formControlName="email"  type="email" placeholder="EMAIL" >
+        <input formControlName="password" type="number" placeholder="PASSWORD">
+        <div class="buttons">
+            <button (click)="signup()">SignUp</button>
+            <button (click)="changeModal()" >To Login</button>
+        </div>
+    </form>
+} @else {
+    <form [formGroup]="signupForm" >
+        <h2>Login</h2>
+        <input formControlName="username" type="text" placeholder="USERNAME" >
+        <input formControlName="password" type="number" placeholder="PASSWORD">
+        <div class="buttons">
+            <button (click)="changeModal()">To SignUp</button>
+            <button (click)="login()">Login</button>
+        </div>
+    </form>
+}

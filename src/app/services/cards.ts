@@ -25,4 +25,8 @@ export class Cards {
   createUser(data: adminSignUp) {
     return this.http.post<adminSignUp>(`${this.apiUrl}adminsignup`, data)
   }
+
+  getUsers() {
+    return this.http.get<adminSignUp[]>(`${this.apiUrl}adminsignup`)
+  }
 }

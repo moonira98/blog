@@ -1,0 +1,18 @@
+.header {  
+    display: flex;
+    padding-top: 0.5rem;
+    background-color: var(--color-bg-light);
+
+     &__auth {
+
+        button {
+            padding: 0.5rem 2rem;
+            margin-right: 10px;
+            border: none;
+            border-radius: 10px;
+            color: var(--primary);
+        }
+    }
+}
+
+
